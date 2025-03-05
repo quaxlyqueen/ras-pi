@@ -18,6 +18,8 @@ echo \
 sudo apt update && sudo apt upgrade;
 
 # Install some basic applications and utilities.
+# - git: A version control software, the underlying piece which most projects are built with.
+#
 # - tldr: a helpful and concise utility for explaining commands, with examples.
 #
 # - tmux: a terminal multiplexer, allowing you to have multiple panes of a terminal
@@ -28,7 +30,7 @@ sudo apt update && sudo apt upgrade;
 # - cloudflared: a utility used to securely expose processes to the internet.
 #
 # - docker: a utility used for quickly, easily, and securely deploying pre-built applications.
-sudo apt install tldr tmux neovim cloudflared docker;
+sudo apt install git tldr tmux neovim cloudflared docker;
 
 # Systemctl is a tool used to manage underlying system processes, called daemons. Enable will start the docker
 # daemon at startup, and start starts the daemon now.
